@@ -20,6 +20,8 @@ stages:
   jobs:
   - name: Deploy Chatbot Assets
     type: deployer
+    deploy_permission: DEV_IN_SPACE
+    deploy_type: cf
     target:
       region_id: ${PROD_REGION_ID}
       organization: ${PROD_ORG_NAME}
